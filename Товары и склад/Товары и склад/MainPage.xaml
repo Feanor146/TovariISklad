@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Товары_и_склад.MainPage">
+    <StackLayout>
+        <Label Text="Авторизация" TextColor="Black" FontSize="24" HorizontalOptions="Center" Padding="30,10,30,10"/>
+        <Entry Placeholder="Логин" x:Name="Login"/>
+        <Entry IsPassword="True" Placeholder="Пароль" x:Name="Password"/>
+        <Button x:Name="Autorization_Click" Text="Вход"/>
+        <Button x:Name="Registration_Click" Text="Регистрация"/>
+    </StackLayout>
+</ContentPage>

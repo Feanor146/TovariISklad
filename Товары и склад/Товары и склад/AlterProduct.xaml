@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Товары_и_склад.AlterProduct">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="24" HorizontalOptions="Center" TextColor="Black" Text="Редактирование товара" />
+            <Entry x:Name="Name" Placeholder="Название товара"/>
+            <Entry x:Name="Quantity" Placeholder="Количество"/>
+            <Entry x:Name="Cost" Placeholder="Цена за еденицу"/>
+            <Button x:Name="Select_Photo" Text="Выбрать фото"/>
+            <Button x:Name="Save_alter" Text="Сохранить изменения"/>
+            <Button x:Name="Delete" Text="Удалить товар"/>
+            <Image HeightRequest="400" WidthRequest="100" x:Name="Photo"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

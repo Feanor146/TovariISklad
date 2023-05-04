@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Товары_и_склад.Registration">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label HorizontalOptions="Center" FontSize="24" Padding="30,10,30,10" TextColor="Black" Text="Регистрация" />
+            <Entry x:Name="Name" Placeholder="Имя"/>
+            <Entry x:Name="Surname" Placeholder="Фамилия"/>
+            <Entry x:Name="FatherName" Placeholder="Отчество"/>
+            <Entry x:Name="Login" Placeholder="Логин"/>
+            <Entry IsPassword="True" x:Name="Password" Placeholder="Пароль"/>
+            <Button x:Name="Registration1" Text="Регистрация"/>
+            <Button x:Name="Autorization" Text="Авторизация"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Товары_и_склад.Add_tovar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label TextColor="Black" FontSize="24" HorizontalOptions="Center" Text="Добавить товар" />
+            <Entry x:Name="Name" Placeholder="Название товара"/>
+            <Entry x:Name="Quantity" Placeholder="Количество"/>
+            <Entry x:Name="Cost" Placeholder="Цена за еденицу"/>
+            <Button x:Name="Select_Photo" Text="Выбрать фото"/>
+            <Button x:Name="Add_tovar1" Text="Добавить товар"/>
+            <Image HeightRequest="400" WidthRequest="100" x:Name="Photo"/>            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

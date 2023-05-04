@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Товары_и_склад.Filtres">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label TextColor="Black" FontSize="24" HorizontalOptions="Start" Text="Фильтры" />
+            <Label TextColor="Black" FontSize="14" HorizontalOptions="Start" Text="Сортировка:" />
+            <Picker x:Name="Sorting"/>
+            <Entry x:Name="MinCost" Placeholder="Минимальная цена"/>
+            <Entry x:Name="MaxCost" Placeholder="Максимальная цена"/>
+            <Button x:Name="FiltrOk" Text="Применить"/>
+            <Button x:Name="FiltrCancel" Text="Сбросить фильтры"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

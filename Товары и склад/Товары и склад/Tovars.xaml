@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Товары_и_склад.Tovars">
+    <ContentPage.Content>
+        <StackLayout>            
+            <Label TextColor="Black" FontSize="24" HorizontalOptions="Center" Text="Просмотр товаров" />
+            <ListView HasUnevenRows="True"  x:Name="Product" ItemsSource="{Binding products}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">                            
+                            <StackLayout Orientation="Horizontal">
+                                <Image HeightRequest="70" Source="{Binding source}"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding ProductName}"/>
+                                <Label Text="{Binding QuantityText}"/>
+                                <Label Text="{Binding CostText}"/>
+                            </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
